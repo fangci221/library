@@ -13,7 +13,7 @@ def connect_mysql():
         'user': os.getenv('DB_USER'),
         'passwd': os.getenv('DB_PASSWD'),
         'host': os.getenv('DB_HOST'),
-        'port': int(os.getenv('DB_PORT')),
+        'port': os.getenv('DB_PORT'),
         'db': os.getenv('DB_NAME')
     }
     

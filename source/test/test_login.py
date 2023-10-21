@@ -16,8 +16,8 @@ def test_login():
     # Assert
     # Check if the account is created
     cursor.execute("USE library")
-    cursor.execute("SELECT * FROM account WHERE account = \"user1\"")
+    cursor.execute("SELECT * FROM account WHERE account = \"user1\";")
     accounts = cursor.fetchall()
-    assert accounts is not None, "User exists"
+    assert accounts is not None, "User is created"
     cursor.close()
     cnx.close()
